@@ -179,6 +179,7 @@ body > * {
 .carousel .slick-slide {
     margin: 8vh 2vh;
     width: 40vh;
+    outline: none;
 }
 
 .carousel .slick-center {
@@ -344,4 +345,215 @@ footer p {
     font-family: 'Montserrat', sans-serif;
     margin: 2vh 0 1vh 0;
     font-size: 2vh;
+}
+
+
+/* Responsive Sizes */
+
+@media all and (max-width:500px) {
+    h1 {
+        font-size: 10vh;
+    }
+    
+    h4 {
+        font-size: 8vh;
+    }
+    
+    /* Header */
+    
+    #site-header {
+        border-top: 3vh solid black;
+        height: 16vh;
+        text-align: center;
+        background: #ddd;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #fff, #ddd);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #fff, #ddd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    
+    #site-header img {
+        z-index: 3;
+        height: 19vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    #site-header .site-title {
+        display: block;
+    }
+    
+    #site-header .site-title > * {
+        flex: 1;
+    }
+    
+    #site-header pre {
+        display: none;
+    }
+    
+    /* Navbar */
+    
+    #site-navbar li {
+        flex: 1;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5vh;
+        font-weight: 300;
+    }
+    
+    #search-form {
+        display: none;
+    }
+    
+    /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      
+      /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+      .sticky + .content {
+        padding-top: 60px;
+      }
+    
+    /* Main Section */
+    
+    #main-section {
+        height: 52vh;
+    }
+    
+    .carousel-item-1 {
+        background: url(power500.jpg);
+        height: 40vh;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    
+    .carousel-item-2 {
+        background: url(palms500.jpg);
+        height: 40vh;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    
+    .carousel-item-3 {
+        background: url(eyeshadow500.jpg);
+        height: 40vh;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    
+    .carousel-item-4 {
+        background: url(smoothies500.jpg);
+        height: 40vh;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    
+    .carousel-item-5 {
+        background: url(streetstyle500.jpg);
+        height: 40vh;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    
+    .carousel .slick-slide {
+        margin: 8vh 2vh;
+        width: 40vh;
+        outline: none;
+    }
+    
+    .carousel .slick-center {
+        margin-top: 2vh;
+        width: 60vh;
+        height: 60vh;
+    }
+    
+    .overlay {
+        text-align: center;
+        width: 80%;
+        height: 80%;
+        margin: auto;
+        margin-top: 3vh;
+        background: rgba(255, 255, 255, 0.6);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        opacity: 0;
+    }
+    
+    .slick-current .overlay {
+        opacity: 1;
+    }
+    
+    .overlay h4 {
+        font-family: 'Tangerine', cursive;
+        font-size: 3.5vh;
+        color: black;
+    }
+    
+    .overlay h2 {
+        font-size: 4vh;
+    }
+    
+    .overlay h3 {
+        font-size: 2.5vh;
+    }
+    
+    /* Blog Section */
+    
+    .blog-section:first-of-type {
+        height: 100%;
+        margin-bottom: 8vh;
+    }
+
+    .blog-section {
+        margin-bottom: 8vh;
+    }
+    
+    .blog-section div {
+        margin: 3vh 0;
+        flex-direction: column;
+    }
+    
+    .blog-content article {
+        text-align: center;
+    }
+    
+    .blog-content article {
+        padding-right: 0;
+    }
+    
+    .blog-content h3 {
+        font-size: 6vh;
+        margin: 3vh 1.5vh;
+        line-height: 8vh;
+    }
+    
+    .blog-content p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2vh;
+        font-weight: 300;
+        margin: 0 1.5vh 2.5vh 1.5vh;
+    }
+    
+    .blog-section aside .luggage-image {
+        width: 80%;
+    }
+    
+    .blog-section aside .dinner-image {
+        width: 80%;
+    }
+    
+    #footer-section {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    #footer-section li {
+        padding-left: 30%;
+        text-align: left;
+        line-height: 4vh;
+        font-size: 1.5vh;
+    }
 }
