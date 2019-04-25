@@ -188,6 +188,26 @@ body > * {
     height: 60vh;
 }
 
+.slick-prev:before, .slick-next:before {
+    color: black;
+    font-size: 2vh;
+}
+
+.slick-prev {
+    top: 22vh;
+    left: 32.75vw;
+}
+
+.slick-next {
+    top: 22vh;
+    right: 32.75vw;
+}
+
+.slick-dots {
+    z-index: 4;
+    top: 43vh;
+}
+
 .overlay {
     text-align: center;
     width: 80%;
@@ -363,7 +383,7 @@ footer p {
     
     #site-header {
         border-top: 3vh solid black;
-        height: 16vh;
+        height: 100%;
         text-align: center;
         background: #ddd;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to bottom, #fff, #ddd);  /* Chrome 10-25, Safari 5.1-6 */
@@ -379,28 +399,38 @@ footer p {
     }
     
     #site-header .site-title {
-        display: block;
-    }
-    
-    #site-header .site-title > * {
-        flex: 1;
+        display: flex;
+        flex-direction: column;
     }
     
     #site-header pre {
-        display: none;
+        margin-top: 2vh;
+        text-align: left;
+        font-size: 3vh;
+        line-height: 3.5vh;
+        display: inline-block;
     }
     
     /* Navbar */
-    
+
     #site-navbar li {
-        flex: 1;
+        flex: 1 1 auto;
         font-family: 'Montserrat', sans-serif;
         font-size: 1.5vh;
         font-weight: 300;
     }
+
+    #site-navbar li:nth-of-type(3) {
+        flex: 1 2 auto;
+    }
+
+    #site-navbar li:last-of-type {
+        flex: 0;
+    }
     
-    #search-form {
+    #search-form input {
         display: none;
+        content:"";
     }
     
     /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -467,6 +497,10 @@ footer p {
         width: 60vh;
         height: 60vh;
     }
+
+    .slick-prev:before, .slick-next:before {
+        display: none;
+    }
     
     .overlay {
         text-align: center;
@@ -485,7 +519,7 @@ footer p {
     .slick-current .overlay {
         opacity: 1;
     }
-    
+
     .overlay h4 {
         font-family: 'Tangerine', cursive;
         font-size: 3.5vh;
@@ -549,7 +583,7 @@ footer p {
         padding-left: 10%;
         padding-right: 10%;
     }
-    
+
     #footer-section li {
         padding-left: 30%;
         text-align: left;
