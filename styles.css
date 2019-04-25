@@ -1,0 +1,347 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 18vh;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 14vh;
+    font-family: 'Dancing Script', cursive;
+    color: #222;
+    font-weight: 400;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #ddd;
+}
+
+body > * {
+    flex: 1;
+}
+
+/* Header */
+
+#site-header {
+    border-top: 3vh solid black;
+    height: 30vh;
+    text-align: center;
+    background: #ddd;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #fff, #ddd);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #fff, #ddd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#site-header img {
+    height: 32vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#site-header .site-title {
+    display: flex;
+    align-self: center;
+}
+
+#site-header .site-title > * {
+    flex: 1;
+}
+
+#site-header pre {
+    font-family: 'Tangerine', cursive;
+    font-size: 3.5vh;
+    line-height: 3.5vh;
+    align-self: center;
+    overflow: hidden;
+    color: #FA7268;
+}
+
+/* Navbar */
+
+#site-navbar {
+    display: flex;
+    background: black;
+    color: white;
+    height: 5vh;
+    margin-bottom: 4vh;
+    z-index: 2;
+}
+
+#site-navbar > * {
+    flex: 1;
+    line-height: 5vh;
+    text-align: center;
+}
+
+#site-navbar ul {
+    display: flex;
+}
+
+#site-navbar li {
+    flex: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vh;
+    font-weight: 300;
+}
+
+#search-form input {
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vh;
+    font-weight: 300;
+    border: 0.2vh solid white;
+    background: black;
+    color: white;
+    border-radius: 5vh;
+    height: 3.5vh;
+    line-height: 3.5vh;
+    width: 20vh;
+    padding-left: 1vh;
+}
+
+::placeholder {
+    color: #ccc;
+}
+
+.fa-search {
+    position: relative;
+    left: -4vh;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+/* Main Section */
+
+#main-section {
+    height: 52vh;
+}
+
+.carousel-item-1 {
+    background: url(power500.jpg);
+    height: 40vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.carousel-item-2 {
+    background: url(palms500.jpg);
+    height: 40vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.carousel-item-3 {
+    background: url(eyeshadow500.jpg);
+    height: 40vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.carousel-item-4 {
+    background: url(smoothies500.jpg);
+    height: 40vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.carousel-item-5 {
+    background: url(streetstyle500.jpg);
+    height: 40vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.carousel .slick-slide {
+    margin: 8vh 2vh;
+    width: 40vh;
+}
+
+.carousel .slick-center {
+    margin-top: 2vh;
+    width: 60vh;
+    height: 60vh;
+}
+
+.overlay {
+    text-align: center;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    margin-top: 3vh;
+    background: rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    opacity: 0;
+}
+
+.slick-current .overlay {
+    opacity: 1;
+}
+
+.overlay h4 {
+    font-family: 'Tangerine', cursive;
+    font-size: 3.5vh;
+    color: black;
+}
+
+.overlay h2 {
+    font-size: 4vh;
+}
+
+.overlay h3 {
+    font-size: 2.5vh;
+}
+
+/* Blog Section */
+
+.blog-section {
+    border-top: 1px solid black;
+    width: 95%;
+    margin: auto;
+    text-align: center;
+}
+
+.blog-section:first-of-type {
+    height: 120vh;
+}
+
+.blog-section {
+    height: 85vh;
+}
+
+.blog-section div {
+    display: flex;
+    margin: 6vh 0;
+}
+
+.blog-section aside, .blog-section article {
+    flex: 1;
+}
+
+.blog-section h2 {
+    position: relative;
+    top: -3vh;
+    display: inline;
+    background:#ddd;
+    padding: 20px;
+    font-family: 'Tangerine', cursive;
+    font-size: 5vh;
+}
+
+.blog-content article {
+    text-align: left;
+}
+
+.blog-content article {
+    align-self: middle;
+    flex: 0.5;
+    padding-right: 5%;
+}
+
+.blog-content h3 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 8vh;
+    margin-bottom: 5vh;
+    line-height: 8vh;
+}
+
+.blog-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vh;
+    font-weight: 300;
+    margin-bottom: 2.5vh;
+}
+
+.blog-section aside .luggage-image {
+    width: 50%;
+}
+
+.blog-section aside .dinner-image {
+    width: 80%;
+}
+
+#footer-section {
+    margin-top: 30vh;
+    text-align: center;
+    display: flex;
+    background: #aaa;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#footer-section > * {
+    flex: 1;
+}
+
+#footer-section li {
+    padding-left: 20%;
+    text-align: left;
+    line-height: 6vh;
+    font-size: 2vh;
+}
+
+#footer-section a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #222;
+}
+
+footer {
+    margin-top: 2vh;
+    border-bottom: 3vh solid black;
+    text-align: center;
+    background: #ddd;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #fff, #ddd);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #fff, #ddd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+footer span {
+    display: inline-block;
+    background: black;
+    height: 6vh;
+    width: 6vh;
+    border-radius: 100%;
+}
+
+footer i {
+    padding-top: 1vh;
+    font-size: 4vh;
+    color: white;
+}
+
+footer span:first-of-type {
+    margin-right: 2vh;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    margin: 2vh 0 1vh 0;
+    font-size: 2vh;
+}
