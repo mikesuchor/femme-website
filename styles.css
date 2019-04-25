@@ -413,12 +413,15 @@ footer p {
     }
 
     #site-navbar li:last-of-type {
-        flex: 0;
+        flex: 1;
     }
     
     #search-form input {
         display: none;
-        content:"";
+    }
+
+    .fa-search {
+        left: 0;
     }
     
     /* The sticky class is added to the navbar with JS when it reaches its scroll position */
