@@ -5,7 +5,7 @@ $(document).ready(function(){
         centerMode: true,
         slidesToShow: 3,
         variableWidth: true,
-        arrows: true,
+        arrows: false,
         dots: true
     });
 });

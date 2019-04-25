@@ -193,16 +193,6 @@ body > * {
     font-size: 2vh;
 }
 
-.slick-prev {
-    top: 22vh;
-    left: 32.75vw;
-}
-
-.slick-next {
-    top: 22vh;
-    right: 32.75vw;
-}
-
 .slick-dots {
     z-index: 4;
     top: 43vh;
@@ -496,10 +486,6 @@ footer p {
         margin-top: 2vh;
         width: 60vh;
         height: 60vh;
-    }
-
-    .slick-prev:before, .slick-next:before {
-        display: none;
     }
     
     .overlay {
