@@ -62,12 +62,11 @@ body > * {
     flex: 1;
 }
 
-#site-header pre {
+#site-header .site-title p {
     font-family: 'Tangerine', cursive;
     font-size: 3.5vh;
     line-height: 3.5vh;
     align-self: center;
-    overflow: hidden;
     color: #FA7268;
 }
 
@@ -362,7 +361,7 @@ footer p {
 
 @media all and (max-width:500px) {
     h1 {
-        font-size: 10vh;
+        margin-top: 0;
     }
     
     h4 {
@@ -393,12 +392,11 @@ footer p {
         flex-direction: column;
     }
     
-    #site-header pre {
-        margin-top: 2vh;
-        text-align: left;
-        font-size: 3vh;
+    #site-header .site-title p {
+        margin: 1vh 0;
+        text-align: center;
+        font-size: 2vh;
         line-height: 3.5vh;
-        display: inline-block;
     }
     
     /* Navbar */
